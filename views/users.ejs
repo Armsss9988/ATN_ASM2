@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <% include products/head.ejs %>
+  <% include products/header.ejs %>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <p>MAIN PAGE</p> 
+    <form action="../products" method="post">  
+      <input type="submit" value="Go to products">       
+    </form>
+  </body>
+</html>
